@@ -65,6 +65,11 @@ main {
 
 	color: rgba(0, 0, 0, 0.7);
 }
+.Credits .Help{
+	color: rgba(255, 255, 255, 0.05);
+	-webkit-user-select: none;
+	user-select: none;
+}
 main div {
 	box-sizing: border-box;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -82,7 +87,7 @@ main div {
 	text-align: center;
 }
 .last{
-	background-color: rgba(255, 217, 0, 0.7);
+	background-color: rgba(255, 221, 0, 0.582);
 }
 main section {
 	font-weight: bold;
