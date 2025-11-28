@@ -46,7 +46,8 @@ main {
 	padding: 50px;
 
 	display: grid;
-	grid-template-columns: repeat(7, 1fr); 
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(4, 1fr);
 
 	column-gap: 10px;
 	row-gap: 10px;
@@ -64,6 +65,15 @@ main div {
 	
 	box-shadow: inset 0px 0px 21px 0px rgba(0, 0, 0, 0.55);
 
-	font-size: auto;
+	font-size: 20px;
 	padding: 5px;
+	text-align: center;
+}
+.last{
+	background-color: rgba(255, 217, 0, 0.7);
+}
+main section {
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.3);
 }
