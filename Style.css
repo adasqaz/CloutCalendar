@@ -44,7 +44,7 @@ header {
     justify-content: center;
 }
 .Logo {
-	height: 80%;
+	height: 90%;
 	aspect-ratio: 1/1;
 	object-fit: contain;
 }
@@ -92,7 +92,7 @@ main div {
 	
 	box-shadow: inset 0px 0px 21px 0px rgba(0, 0, 0, 0.55);
 
-	font-size: clamp(5px, 20px, 100px);
+	font-size: 3vw;
 	padding: 5px;
 	text-align: center;
 	overflow: auto;
@@ -239,6 +239,7 @@ main video {
 
 	overflow: auto;
 	gap:10px;
+	font-size: 20px;
 }
 .NewsDisplay section {
 	box-sizing: border-box;
@@ -255,7 +256,9 @@ main video {
 	flex-direction: column;
 	justify-content: flex-start;
 }
-
+.NewsDisplay div{
+	font-size: 20px;
+}
 .NewsDisplay div:hover, .NewsDisplay section:hover{
 	cursor: default;
 }
@@ -294,6 +297,7 @@ main video {
 	flex-direction: row;
 	justify-content: flex-start;
 
+	
 	gap: 5px;
 }
 .NewsDisplay section .Header{
@@ -314,15 +318,18 @@ main video {
 	justify-content: space-between;
 
 	overflow: hidden;
+	
+}
+.NewsDisplay section .Header div{
+	font-size: 1.5vw;
 }
 .Date{
-	background-color: rgba(0, 0, 0, 0.2);
-	box-shadow: none;
 	font-style: italic;
+}
+.NiceBack{
+		background-color: rgba(0, 0, 0, 0.2);
+	box-shadow: none;
 	border-radius: 3px;
-
-
-	color: rgb(82, 82, 82);
 }
 
 .ImageDisplay{
