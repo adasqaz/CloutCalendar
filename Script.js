@@ -34,3 +34,23 @@ function ImageClicked(ImageName, AltText){
         this.remove(); 
     });
 }
+
+document.addEventListener("DOMContentLoaded", ()=>{
+	const Measure = document.createElement("div");
+	Measure.id = "ScreenMeasuringObject";
+
+	Html.appendChild(Measure);
+
+	const Rect = Measure.getBoundingClientRect();
+	if (Rect.height > Rect.width) {
+		console.log("User Uses Tall Screen");
+		const Lights = document.getElementsByClassName("Lights");
+		Array.from(Lights).forEach(element => {
+			element.remove();
+		});
+	}else{
+		console.log("User Uses Wide Screen");
+	}
+
+	Measure.remove();
+});
