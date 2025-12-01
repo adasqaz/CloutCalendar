@@ -7,10 +7,12 @@ html, body {
 body{
 	display: flex;
 	flex-direction: column;
+	width: 100vv;
+	height: 100vh;
 }
 header {
 	width: 100%;
-	height: 10vh;
+	height: fit-content;
 	background-color: rgb(219, 0, 0);
 
 	box-shadow: 0px 5px 20px -5px rgb(0, 0, 0);
@@ -20,8 +22,13 @@ header {
     gap: 10px;
     margin: 0;
 	z-index: 1;
-	font-size: clamp(10px, 50px, 200px);
+	font-size: 300%;
 	color: green;
+	overflow: auto;
+}
+.LeftLights, .RightLights{
+	height: 100%;
+	width: auto;
 }
 .MiddleHeader{
 	height: 100%;
@@ -34,8 +41,9 @@ header {
     justify-content: center;
 }
 .Logo {
-	height: 80%;
+	height: 50px;
 	aspect-ratio: 1/1;
+	object-fit: contain;
 }
 main {
 	box-sizing: border-box;
@@ -101,7 +109,7 @@ main div video:hover{
 }
 main section {
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 100%;
 	color: rgba(0, 0, 0, 0.3);
 }
 main section:hover{
@@ -115,7 +123,8 @@ main p {
 .Footer {
 	box-sizing: border-box;
 	padding: 5px;
-	height: 5vh;
+	width: 100%;
+	flex: 1;
 	display: flex;
 	align-items: center;
     justify-content: space-between;
@@ -129,6 +138,7 @@ main p {
 	font-size: 20px;
 	
 	color: azure;
+
 }
 .Footer a {
 	color: rgb(136, 136, 136);
