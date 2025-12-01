@@ -221,10 +221,9 @@ main video {
 }
 
 .NewsDisplay{
-	display: flex;
-	flex-direction: column;
+	display: block;
 
-	overflow-y: auto;
+	overflow: auto;
 	gap:10px;
 }
 .NewsDisplay section {
@@ -235,11 +234,16 @@ main video {
 
 	border-radius: 10px;
 	padding: 10px;
+	margin-top: 10px;
 	overflow: auto;
 
 	display: flex;
 	flex-direction: column;
-	gap: 3px;
+	justify-content: flex-start;
+}
+
+.NewsDisplay div:hover, .NewsDisplay section:hover{
+	cursor: default;
 }
 .NewsDisplay section img {
 	height: 100%;
@@ -247,10 +251,10 @@ main video {
 
 	object-fit: contain;
 }
-.NewsDisplay section img:hover {
+.Baner:hover {
 	cursor: pointer;
 }
-.NewsDisplay section .Text {
+.Text {
 	width: 80%;
 	height: 100%;
 
@@ -263,10 +267,6 @@ main video {
 	align-items: flex-start;
 	justify-content: flex-start;
 }
-/* .Text{
-	text-align: left;
-
-} */
 .NewsDisplay section .Content{
 	box-sizing: border-box;
 	width: 100%;
@@ -278,6 +278,7 @@ main video {
 
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-start;
 
 	gap: 5px;
 }
