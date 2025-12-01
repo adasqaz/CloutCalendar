@@ -23,7 +23,7 @@ header {
     gap: 10px;
     margin: 0;
 	z-index: 1;
-	font-size:xx-large;
+	font-size:5vw;
 	white-space: nowrap;
 	color: green;
 	overflow: hidden;
