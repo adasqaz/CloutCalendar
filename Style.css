@@ -293,7 +293,7 @@ main video {
 	background-color: rgba(0, 0, 0, 0);
 	box-shadow: none;
 
-	overflow: auto;
+	/* overflow: auto; */
 
 	display: flex;
 	flex-direction: row;
@@ -319,17 +319,20 @@ main video {
 	align-items: center;
 	justify-content: space-between;
 
+	font-size: 4vw;
+
 	overflow: hidden;
 	
 }
 .NewsDisplay section .Header div{
-	font-size: calc(1vw+5px);
+	font-size: 1.3vw;
 }
 .Date{
 	font-style: italic;
+	color: rgba(255, 255, 255, 0.5);
 }
 .NiceBack{
-		background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.2);
 	box-shadow: none;
 	border-radius: 3px;
 }
@@ -363,7 +366,9 @@ main video {
 
 	z-index: 999;
 }
-
+.Content{
+	overflow: hidden;
+}
 #ScreenMeasuringObject{
 	position:absolute;
 
