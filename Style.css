@@ -379,3 +379,10 @@ main video {
 .Opened{
 	background-color: rgba(0, 0, 0, 0.5);
 }
+
+.Italic{
+	font-style: italic;
+}
+.Opacity{
+	opacity: 0.5;
+}
